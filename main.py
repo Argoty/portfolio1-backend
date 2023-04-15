@@ -1,4 +1,4 @@
-# from routers import palabras, usuarios
+from routers import users, projects, skills, services
 from fastapi import FastAPI, HTTPException
 
 # from db.models.vocabulario import Vocabulario, Palabra
@@ -10,15 +10,18 @@ from fastapi import FastAPI, HTTPException
 # from bson import ObjectId
 from fastapi.middleware.cors import CORSMiddleware
 
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 
-# load_dotenv()
+load_dotenv()
 
 
 app = FastAPI()
 
-# app.include_router(palabras.router)
+app.include_router(users.router)
+app.include_router(projects.router)
+app.include_router(skills.router)
+app.include_router(services.router)
 # app.include_router(usuarios.router)
 
 
