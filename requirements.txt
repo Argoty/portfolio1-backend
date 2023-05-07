@@ -1,4 +1,5 @@
 fastapi
+pydantic
 pymongo
 python-dotenv
 python-multipart
