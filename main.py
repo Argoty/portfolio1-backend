@@ -1,6 +1,7 @@
 from routers import users, projects, skills, services
 from fastapi import FastAPI, HTTPException
 
+
 # from db.models.vocabulario import Vocabulario, Palabra
 
 # from db.schemas.vocabulario import vocabularios_schema
@@ -45,5 +46,5 @@ async def api_portfolio():
 
 
 
-
 # uvicorn main:app --reload
+# uvicorn main:app --host 0.0.0.0 --port 10000
