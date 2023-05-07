@@ -47,4 +47,4 @@ async def api_portfolio():
 
 
 # uvicorn main:app --reload
-# uvicorn main:app --host 0.0.0.0 --port 10000
+# codigo terminal server: uvicorn main:app --host 0.0.0.0 --port 10000
